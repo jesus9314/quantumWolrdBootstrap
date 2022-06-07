@@ -12,6 +12,9 @@ main > .container> section{
 .card{
     margin: 10px 0px;
 }
+.card-group{
+    padding: 10px;
+}
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
