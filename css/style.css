@@ -18,6 +18,9 @@ main > .container> section{
 .product{
     height: 250px;
 }
+.prov{
+    height: 150px;
+}
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
