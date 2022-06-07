@@ -9,7 +9,7 @@ body{
 main > .container> section{
     padding: 30px 15px 0;
 }
-main > .container> section> .row> .card{
+.card{
     margin: 10px 0px;
 }
 .bd-placeholder-img {
