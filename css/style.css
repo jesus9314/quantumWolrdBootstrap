@@ -15,6 +15,9 @@ main > .container> section{
 .card-group{
     padding: 10px;
 }
+.product{
+    height: 250px;
+}
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
