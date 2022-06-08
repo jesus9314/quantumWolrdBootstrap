@@ -1,7 +1,7 @@
 /*Estilos Globales */
 body{
     background-color: #dfdfdf;
-    padding-top: 1.8rem;
+    padding-top: 4.5rem;
 }
 /*Personalizando el Carrusel*/
 .carousel-item {
@@ -17,7 +17,7 @@ body{
     height: 15rem;
 }
 .card-img{
-    height: 20rem;
+    height: 19rem;
 }
 /*Media Query*/
 @media (max-width: 992px){
@@ -47,6 +47,28 @@ body{
         height: 32rem;
       }
 }
+/*Animaciones*/
+.animation{
+    animation-duration: 2s;
+    animation-name: appear;
+    animation-iteration-count: 1;
+}
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.zoom{
+    transition: transform .5s;
+}
+.zoom:hover{
+    transform: scale(1.5);
+}
+
+
 
 .product{
     height: 250px;
@@ -122,6 +144,10 @@ body{
     .footer .container ul li a {
         text-decoration: none;
         color: black;
+        transition: 0.5s;
+    }
+    .footer .container ul li a:hover{
+        text-shadow: 3px 2px 5px #000000;
     }
     /*Damos un tamaño a las imágenes dentro de la lista*/
     .footer .container ul li img {
