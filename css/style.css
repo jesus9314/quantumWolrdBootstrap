@@ -1,26 +1,55 @@
-/*Color de fondo */
+/*Estilos Globales */
 body{
     background-color: #dfdfdf;
+    padding-top: 1.8rem;
 }
+/*Personalizando el Carrusel*/
+.carousel-item {
+    height: 32rem;
+  }
+/*Personalizamos el logo*/
 #mainLogo{
-    height: 70px;
-    padding: 5px;
+    height: 3rem;
+    padding: 2px;
 }
-main > .container> section{
-    padding: 30px 15px 0;
+/*tamaño estandar a las imágenes*/
+.card-img-top{
+    height: 15rem;;
 }
-.card{
-    margin: 10px 0px;
+.card-img{
+    height: 20rem;
 }
-.card-group{
-    padding: 10px;
+/*Media Query*/
+@media (max-width: 992px){
+    .card-img-top{
+        height: 32rem;
+    }
+    .card-img{
+        height: 15rem;
+    }
 }
+@media (max-width: 768px){
+    .card-img{
+        height: 100%;
+    }
+    .carousel-item {
+        height: 100%;
+      }
+}
+@media (max-width: 576px){
+    .card-img-top{
+        width: 100%;;
+        height: 100%;
+    }
+}
+
 .product{
     height: 250px;
 }
 .prov{
     height: 150px;
 }
+
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
