@@ -13,7 +13,9 @@
 	<body class="d-flex flex-column h-100">
 		<header>
 			<!-- navbar -->
-			<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top border-3 border-bottom border-warning">
+			<nav
+				class="navbar navbar-expand-md bg-dark navbar-dark fixed-top border-3 border-bottom border-warning"
+			>
 				<div class="container">
 					<a href="../index.html">
 						<img
@@ -65,9 +67,9 @@
 		<!-- Contenido Principal -->
 		<main class="flex-shrink-0">
 			<div class="container">
-                <!--Contáctanos-->
+				<!--Contáctanos-->
 				<section>
-					<div class="card mb-3">
+					<div class="card mb-3 shadow animation">
 						<div class="row g-0">
 							<div class="col-md-12">
 								<img
@@ -91,10 +93,10 @@
 						</div>
 					</div>
 				</section>
-                <!--ubícanos-->
+				<!--ubícanos-->
 				<section>
-					<div class="card text-center">
-						<div class="card-header">Ubícanos</div>
+					<div class="card text-center shadow animation">
+						<div class="card-header bg-warning">Ubícanos</div>
 						<div class="card-body">
 							<h5 class="card-title">Telf. (01)156-2184</h5>
 							<p class="card-text">
@@ -104,47 +106,99 @@
 								accusamus laudantium facere!
 							</p>
 							<iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1379.4739267582993!2d-77.08573727344509!3d-12.061300589481053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c9a03d919981%3A0x89f666e822536db6!2sPuerta%201%20-%20UNMSM!5e0!3m2!1ses-419!2spe!4v1652228503134!5m2!1ses-419!2spe"
-							width="300"
-							height="250"
-							style="border: 0"
-							allowfullscreen=""
-							loading="lazy"
-							referrerpolicy="no-referrer-when-downgrade"></iframe>
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1379.4739267582993!2d-77.08573727344509!3d-12.061300589481053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c9a03d919981%3A0x89f666e822536db6!2sPuerta%201%20-%20UNMSM!5e0!3m2!1ses-419!2spe!4v1652228503134!5m2!1ses-419!2spe"
+								width="300"
+								height="250"
+								style="border: 0"
+								allowfullscreen=""
+								loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade"
+							></iframe>
 						</div>
 					</div>
 				</section>
-                <!--Formulario-->
-                <section>
-                    <div class="card">
-                        <div class="row">
-                            <form action="#">
-                                <div class="card-body">
-                                  <div class="m-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                                    <input type="name" class="form-control" id="exampleFormControlInput1">
-                                  </div>
-                                  <div class="m-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Apellido</label>
-                                    <input type="lastName" class="form-control" id="exampleFormControlInput1">
-                                  </div>
-                                  <div class="m-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1">
-                                  </div>
-                                  <div class="m-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
-                                    <input type="telf" class="form-control" id="exampleFormControlInput1">
-                                  </div>
-                                  <div class="m-3">
-                                    <label for="exampleFormControlTextarea1" class="form-label">Escribe tu mensaje aquí</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-                                  </div>
-                                </div>
-                            </form>
-                        </div>
-                      </div>
-                </section>
+				<!--Formulario-->
+				<section>
+					<div class="card my-3 shadow animation">
+						<div class="card-header bg-warning text-center">
+							<h3>Envíanos un mensaje</h3>
+						</div>
+						<div class="row">
+							<form action="#">
+								<div class="card-body">
+									<div class="row m-3">
+										<label
+											for="exampleFormControlInput1"
+											class="col-form-label col-md-2"
+											>Nombre</label
+										>
+										<div class="col-md-10">
+											<input
+												type="name"
+												class="form-control"
+												id="exampleFormControlInput1"
+											/>
+										</div>
+									</div>
+									<div class="row m-3">
+										<label
+											for="exampleFormControlInput1"
+											class="col-form-label col-md-2"
+											>Apellido</label
+										>
+										<div class="col-md-10">
+											<input
+												type="name"
+												class="form-control"
+												id="exampleFormControlInput1"
+											/>
+										</div>
+									</div>
+									<div class="row m-3">
+										<label
+											for="exampleFormControlInput1"
+											class="col-form-label col-md-2"
+											>Email</label
+										>
+										<div class="col-md-10">
+											<input
+												type="name"
+												class="form-control"
+												id="exampleFormControlInput1"
+											/>
+										</div>
+									</div>
+									<div class="row m-3">
+										<label
+											for="exampleFormControlInput1"
+											class="col-form-label col-md-2"
+											>Teléfono</label
+										>
+										<div class="col-md-10">
+											<input
+												type="name"
+												class="form-control"
+												id="exampleFormControlInput1"
+											/>
+										</div>
+									</div>
+									<div class="row m-3">
+										<label for="exampleFormControlTextarea1" class="col-form-label col-md-2"
+											>Escribe tu mensaje</label
+										>
+										<div class="col-md-10">
+											<textarea
+											class="form-control"
+											id="exampleFormControlTextarea1"
+											rows="5"
+										></textarea>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</section>
 			</div>
 		</main>
 
@@ -158,5 +212,6 @@
 				</ul>
 			</div>
 		</footer>
+		<script src="../js/bootstrap.min.js"></script>
 	</body>
 </html>
