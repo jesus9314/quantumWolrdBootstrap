@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/*Estilos Globales */
+body {
+  background-color: #dfdfdf;
+  padding-top: 6.5rem; }
+
+/*Personalizando el Carrusel*/
+.carousel-item {
+  height: 32rem; }
+
+/*Personalizamos el logo*/
+#mainLogo {
+  height: 3rem;
+  padding: 2px; }
+
+/*tamaño estandar a las imágenes*/
+.card-img-top {
+  height: 15rem; }
+
+.card-img {
+  height: 19rem; }
+
+.img-thumbnail {
+  height: 18rem; }
+
+.product {
+  height: 15rem; }
+
+.prov {
+  height: 13rem; }
+
+.sec {
+  height: 15rem; }
+
+/*Media Query*/
+@media (max-width: 992px) {
+  .card-img-top {
+    height: 32rem; }
+  .card-img {
+    height: 15rem; }
+  .img-thumbnail {
+    height: 13rem; }
+  .product {
+    height: 10rem; }
+  .prov {
+    height: 9rem; }
+  .sec {
+    height: 10rem; } }
+
+@media (max-width: 768px) {
+  .card-img {
+    height: 100%; }
+  .carousel-item {
+    height: 100%; }
+  .img-thumbnail {
+    height: 10rem; }
+  .product {
+    height: 22rem; }
+  .prov {
+    height: 15rem; }
+  .sec {
+    height: 20rem; }
+  .footer .container li {
+    display: block; } }
+
+@media (max-width: 576px) {
+  .card-img-top {
+    width: 100%;
+    height: 100%; }
+  .img-thumbnail {
+    height: 20rem; }
+  .product {
+    height: 18rem; } }
+
+@media (min-width: 769px) {
+  .carousel-item {
+    height: 32rem; } }
+
+/*Animaciones*/
+.animation {
+  animation-duration: 2s;
+  animation-name: appear;
+  animation-iteration-count: 1; }
+
+@keyframes appear {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.zoomb {
+  transition: transform 1s; }
+  .zoomb:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px 0px #5e5e5e; }
+
+.zoom {
+  transition: transform .8s; }
+  .zoom:hover {
+    transform: scale(1.2); }
+
+.item {
+  transition: 1s; }
+  .item:hover {
+    transform: translate(5px, -5px); }
+
+.item .card-header:hover {
+  color: #3737a5; }
+
+/*Pie de página */
+.footer {
+  padding: 20px; }
+  .footer .container ul {
+    list-style: none;
+    margin: auto; }
+    .footer .container ul li {
+      display: inline;
+      padding: 0px 5px; }
+      .footer .container ul li a {
+        text-decoration: none;
+        color: black;
+        transition: 0.5s; }
+        .footer .container ul li a:hover {
+          text-shadow: 3px 2px 5px #5e5e5e; }
+      .footer .container ul li img {
+        width: 20px; }
+
+/*Asignamos un margin auto a la lista para que se mantenga centrado el contenido*/
+.footer .container ul {
+  list-style: none;
+  margin: auto; }
+
+.footer .container li {
+  display: inline;
+  padding: 0px 5px; }
+
+/*Cambiamos los estilos por defecto de los enlaces que están dentro de la lista*/
+.footer .container ul li a {
+  text-decoration: none;
+  color: black;
+  transition: 0.5s; }
+
+.footer .container ul li a:hover {
+  text-shadow: 3px 2px 5px #5e5e5e; }
+
+/*Damos un tamaño a las imágenes dentro de la lista*/
+.footer .container ul li img {
+  width: 20px; }
+
+/*Media query*/
+@media (max-width: 768px) {
+  .footer .container li {
+    display: block;
+    padding: 5px 0px; } }

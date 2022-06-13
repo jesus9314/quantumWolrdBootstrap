@@ -1,0 +1,33 @@
+/*Estilos Globales */
+body{
+    background-color: $bg-color;
+    padding-top: 6.5rem;
+}
+/*Personalizando el Carrusel*/
+.carousel-item {
+    height: 32rem;
+  }
+/*Personalizamos el logo*/
+#mainLogo{
+    height: 3rem;
+    padding: 2px;
+}
+/*tamaño estandar a las imágenes*/
+.card-img-top{
+    height: 15rem;
+}
+.card-img{
+    height: 19rem;
+}
+.img-thumbnail{
+    height: 18rem;
+}
+.product{
+    height: 15rem;
+}
+.prov{
+    height: 13rem;
+}
+.sec{
+    height: 15rem;
+}

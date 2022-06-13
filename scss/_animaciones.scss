@@ -1,0 +1,39 @@
+/*Animaciones*/
+.animation{
+    animation-duration: 2s;
+    animation-name: appear;
+    animation-iteration-count: 1;
+}
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.zoomb{
+    transition: transform 1s;
+    &:hover
+    {
+        transform: scale(1.1);
+        box-shadow: 5px 5px 5px 0px $shadow;
+    }
+}
+.zoom{
+    transition: transform .8s;
+    &:hover
+    {
+        transform: scale(1.2);
+    }
+}
+.item{
+    transition: 1s;
+    &:hover
+    {
+        transform:translate(5px,-5px)
+    }
+}
+.item .card-header:hover{
+    color: rgb(55, 55, 165);
+}

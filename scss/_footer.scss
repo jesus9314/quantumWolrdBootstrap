@@ -1,0 +1,54 @@
+/*Pie de página */
+.footer {
+	padding: 20px;
+    .container{
+        ul{
+            list-style: none;
+            margin: auto;
+            li{
+                display: inline;
+                padding: 0px 5px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    transition: 0.5s;
+                    &:hover{
+                        text-shadow: 3px 2px 5px $shadow;
+                    }
+                }
+                img{
+                    width: 20px;
+                }
+            }
+        }
+    }
+    }
+    /*Asignamos un margin auto a la lista para que se mantenga centrado el contenido*/
+    .footer .container ul {
+        list-style: none;
+        margin: auto;
+    }
+    .footer .container li{
+        display: inline;
+        padding: 0px 5px;
+    }
+    /*Cambiamos los estilos por defecto de los enlaces que están dentro de la lista*/
+    .footer .container ul li a {
+        text-decoration: none;
+        color: black;
+        transition: 0.5s;
+    }
+    .footer .container ul li a:hover{
+        text-shadow: 3px 2px 5px $shadow;
+    }
+    /*Damos un tamaño a las imágenes dentro de la lista*/
+    .footer .container ul li img {
+        width: 20px;
+    }
+    /*Media query*/
+    @media (max-width: 768px){
+        .footer .container li{
+            display: block;
+            padding: 5px 0px;
+        }
+    }
