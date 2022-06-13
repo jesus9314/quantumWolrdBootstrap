@@ -25,6 +25,12 @@ body{
 .product{
     height: 15rem;
 }
+.prov{
+    height: 13rem;
+}
+.sec{
+    height: 15rem;
+}
 /*Media Query*/
 @media (max-width: 992px){
     .card-img-top{
@@ -37,6 +43,12 @@ body{
         height: 13rem;
     }
     .product{
+        height: 10rem;
+    }
+    .prov{
+        height: 9rem;
+    }
+    .sec{
         height: 10rem;
     }
 }
@@ -52,6 +64,12 @@ body{
     }
     .product{
         height: 22rem;
+    }
+    .prov{
+        height: 15rem;
+    }
+    .sec{
+        height: 20rem;
     }
 }
 @media (max-width: 576px){
@@ -97,9 +115,6 @@ body{
 }
 .zoom:hover{
     transform: scale(1.2);
-}
-.prov{
-    height: 150px;
 }
 .item{
     transition: 1s;
