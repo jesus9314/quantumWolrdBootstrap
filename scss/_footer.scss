@@ -1,27 +1,40 @@
 /*Pie de página */
 .footer {
 	padding: 20px;
-    .container{
-        ul{
-            list-style: none;
-            margin: auto;
-            li{
-                display: inline;
-                padding: 0px 5px;
-                a{
-                    text-decoration: none;
-                    color: black;
-                    transition: 0.5s;
-                    &:hover{
-                        text-shadow: 3px 2px 5px black;
+    background-color: #282828;
+    height: 170px;
+    color: white;
+        .container{
+            ul{
+                list-style: none;
+                li{
+                    display: inline;
+                    padding: 0px 5px;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        transition: 0.5s;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                        img{
+                            width: 20px;
+                        }
                     }
                 }
-                img{
-                    width: 20px;
-                }
+            }
+            .derechos{
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
             }
         }
+
     }
+    #redesSociales{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: end;
     }
     /*Media query*/
     @media (max-width: 768px){

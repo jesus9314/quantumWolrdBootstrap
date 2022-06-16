@@ -1,7 +1,12 @@
 /*Estilos Globales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     background-color: $bg-color;
-    padding-top: 6.5rem;
+    padding-top: 5.8rem;
 }
 /*Personalizando el Carrusel*/
 .carousel-item {
@@ -30,4 +35,10 @@ body{
 }
 .sec{
     height: 15rem;
+}
+.carousel-caption{
+    text-shadow: 1px 1px 2px black;
+}
+.textWhite{
+    color: white;
 }

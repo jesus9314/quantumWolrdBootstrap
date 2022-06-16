@@ -1,8 +1,13 @@
 @charset "UTF-8";
 /*Estilos Globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 body {
   background-color: #dfdfdf;
-  padding-top: 6.5rem; }
+  padding-top: 5.8rem; }
 
 /*Personalizando el Carrusel*/
 .carousel-item {
@@ -31,6 +36,12 @@ body {
 
 .sec {
   height: 15rem; }
+
+.carousel-caption {
+  text-shadow: 1px 1px 2px black; }
+
+.textWhite {
+  color: white; }
 
 /*Media Query*/
 @media (max-width: 992px) {
@@ -97,7 +108,7 @@ body {
 .zoom {
   transition: transform .8s; }
   .zoom:hover {
-    transform: scale(1.2); }
+    transform: scale(1.01); }
 
 .item {
   transition: 1s; }
@@ -109,21 +120,32 @@ body {
 
 /*Pie de página */
 .footer {
-  padding: 20px; }
+  padding: 20px;
+  background-color: #282828;
+  height: 170px;
+  color: white; }
   .footer .container ul {
-    list-style: none;
-    margin: auto; }
+    list-style: none; }
     .footer .container ul li {
       display: inline;
       padding: 0px 5px; }
       .footer .container ul li a {
         text-decoration: none;
-        color: black;
+        color: white;
         transition: 0.5s; }
         .footer .container ul li a:hover {
-          text-shadow: 3px 2px 5px black; }
-      .footer .container ul li img {
-        width: 20px; }
+          text-decoration: underline; }
+        .footer .container ul li a img {
+          width: 20px; }
+  .footer .container .derechos {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; }
+
+#redesSociales {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: end; }
 
 /*Media query*/
 @media (max-width: 768px) {
