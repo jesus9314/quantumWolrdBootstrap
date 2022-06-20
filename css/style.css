@@ -19,29 +19,46 @@ body {
   padding: 2px; }
 
 /*tamaño estandar a las imágenes*/
-.card-img-top {
+.card-img-top, .product, .prov, .sec {
   height: 15rem; }
 
-.card-img {
+.card-img, .img-thumbnail {
   height: 19rem; }
-
-.img-thumbnail {
-  height: 18rem; }
-
-.product {
-  height: 15rem; }
-
-.prov {
-  height: 13rem; }
-
-.sec {
-  height: 15rem; }
 
 .carousel-caption {
   text-shadow: 1px 1px 2px black; }
 
 .textWhite {
   color: white; }
+
+/*Mapa*/
+/*Bucle*/
+.team1 {
+  color: red; }
+
+.team2 {
+  color: blue; }
+
+.team3 {
+  color: green; }
+
+/*map-get*/
+.titleGraphics {
+  color: red;
+  text-decoration: underline; }
+
+/*extend*/
+.product2, .product3 {
+  background-color: #f76e6e;
+  margin: 5px; }
+
+.product3 {
+  color: white; }
+
+/*Mixin con parámetro*/
+.productImg {
+  margin: 5px;
+  background-color: blue; }
 
 /*Media Query*/
 @media (max-width: 992px) {

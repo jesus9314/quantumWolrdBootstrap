@@ -18,27 +18,53 @@ body{
     padding: 2px;
 }
 /*tamaño estandar a las imágenes*/
-.card-img-top{
-    height: 15rem;
+.card-img-top, .product, .prov, .sec{
+    height: $img-md;
 }
-.card-img{
-    height: 19rem;
-}
-.img-thumbnail{
-    height: 18rem;
-}
-.product{
-    height: 15rem;
-}
-.prov{
-    height: 13rem;
-}
-.sec{
-    height: 15rem;
+.card-img, .img-thumbnail{
+    height: $img-card;
 }
 .carousel-caption{
     text-shadow: 1px 1px 2px black;
 }
 .textWhite{
     color: white;
+}
+/*Mapa*/
+$members:(
+    1:red,
+    2:blue,
+    3:green
+);
+/*Bucle*/
+@each $member, $color in $members{
+    .team#{$member}{
+        color: $color;
+    }
+}
+/*map-get*/
+$style:(
+    color:red,
+    style:underline
+);
+.titleGraphics{
+    color:map-get($style, color);
+    text-decoration: map-get($style, style );
+}
+/*extend*/
+.product2{
+    background-color: rgb(247, 110, 110);
+    margin: 5px;
+}
+.product3{
+    @extend.product2;
+    color: white;
+}
+/*Mixin con parámetro*/
+@mixin img ($margin, $color) {
+    margin:$margin;
+    background-color: $color;
+}
+.productImg{
+    @include img(5px, blue);
 }
