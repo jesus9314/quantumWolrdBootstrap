@@ -81,7 +81,9 @@ body {
   .img-thumbnail {
     height: 20rem; }
   .product {
-    height: 18rem; } }
+    height: 18rem; }
+  .sec {
+    height: 10rem; } }
 
 @media (min-width: 769px) {
   .carousel-item {
